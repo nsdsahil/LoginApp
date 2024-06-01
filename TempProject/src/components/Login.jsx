@@ -50,23 +50,22 @@ const Login = () => {
   };
 
   return (
-    <div className="form-container"> {/* Apply shared CSS class */}
+    <div className="form-container"> 
             <h2>Login</h2>
             {errors.general && <div className="error-message">{errors.general}</div>}
             {successMessage && <div className="success-message">{successMessage}</div>}
             <form onSubmit={handleSubmit}>
-                <div className="input-container"> {/* Apply shared CSS class */}
+                <div className="input-container"> 
                     <label>Email</label>
                     <input name="email" type="email" value={formData.email} onChange={handleChange} />
                     {errors.email && <div className="error-message">{errors.email}</div>}
                 </div>
-                <div className="input-container"> {/* Apply shared CSS class */}
+                <div className="input-container"> 
                     <label>Password</label>
                     <input name="password" type="password" value={formData.password} onChange={handleChange} />
                     {errors.password && <div className="error-message">{errors.password}</div>}
                 </div>
-                <button className="submit-button" type="submit">Login</button> {/* Apply shared CSS class */}
-            </form>
+                <button className="submit-button" type="submit">Login</button> 
         </div>
   );
 };
