@@ -1,4 +1,4 @@
-// src/components/Login.js
+
 import React, { useState } from 'react';
 import { login } from '../functions/auth';
 import { useNavigate } from 'react-router-dom';
